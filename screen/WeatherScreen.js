@@ -1,11 +1,11 @@
 import React from 'react';
 import Weather from '../components/Weather'
-import { View } from 'react-native'
+import { View, StatusBar } from 'react-native'
 
 export default function WeatherScreen({route}) {
     return (
     <View>
-        <Weather zipCode={route.params.zipCode} />
+    <Weather zipCode={route.params.zipCode} />
     </View>
-    )
-   }
+    );
+}
